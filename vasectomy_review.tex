@@ -1,0 +1,103 @@
+\documentclass[12pt,a4paper,onecolumn]{letter}
+
+\usepackage{pgfplots}
+\usepackage[encapsulated]{CJK}
+\usepackage[utf8]{inputenc}
+\usepackage{CJKutf8}
+\usepackage{lmodern}
+\usepackage{kpfonts}
+\usepackage{tgpagella}
+\usepackage[hidelinks]{hyperref}
+
+\linespread{1.05}
+
+\pgfplotsset{compat=newest}
+\usepackage{filecontents}
+\begin{filecontents*}{datafile.dat}
+0 1
+0.25 0.5
+0.5 1.5
+1 9
+1.25 1.5
+2 1.75
+3 2
+4 2.5
+5 3.1
+6 3.5
+7 4
+\end{filecontents*}
+
+\begin{document}
+\begin{center}
+A TRIP TO THE UROLOGIST
+
+\begin{CJK}{UTF8}{min}(「パイプカット」)\end{CJK}
+
+14 February, 2015
+\end{center}
+
+He opens the door wearing green pants that look like quatrefoil upholstery. I take off my shoes and edge into a chair at the end of his desk. The ``clinic'' is, probably, Dr. Ueno's own apartment into which a small office and surgery has been forcefully pressed. If I myself did not live in such a place, the amount of clutter might be discomfiting. It is not obsessive. It is life where the middle-class baseline of material just doesn't fit into an affordable dwelling.
+\footnote{If you don't quite know what I mean, the best example of specifically Japanese clutter I've seen is a two-and-a-half minute segment near the beginning of the movie ``Life In A Day'', \url{https://www.youtube.com/watch?v=JaFVr_cJJIY\#t=580}. The fish-eye lens appropriately captures the feeling of being in such a house for the first time; ``stuff'' seem to simultaneously topple, hang and pile inwards from all directions.}
+Books, desks, radios, rubbish bags, computers, chairs, miniature shrines, cups, cleaning fluids, slippers. Even the monks here are rarely ascetics. In any case I am nervous at first but soon realize he has the professional legitimacy of the unkempt.
+\footnote{
+I have been a patient at more professional-looking clinics that were almost scams. Below, point {\it $U_1$} represents the offices of Dr. Ueno; highly legitimate but appearing as shady as hell. As a comparative control point, ${\it u_1}$ represents all things that contain by intention uncooked sea urchin.
+\begin{center}
+\begin{tikzpicture}
+\begin{axis}[line width=0.5,xmin=0,ymin=0,ylabel=Actual legitimacy,xlabel=Appearance of legitimacy,label style={font=\bfseries},grid=none,xtick=\empty,ytick=\empty]
+      \addplot[smooth,mark=none] table {datafile.dat};
+      \addplot[scatter,only marks,nodes near coords,point meta=explicit symbolic,nodes near coords align={right}] coordinates {(0.25,0.5) [{\it $u_1$}] (1,9) [{\it $U_1$}]};
+\end{axis}
+\end{tikzpicture}
+\end{center}
+}
+
+He seems more like a double-bassist so I ask: why did you choose urology? He tells me he's a sixth-generation doctor from a long line of gynecologists. As his father was rarely at home and did not enjoy the demands of his job, his mother suggested he choose a profession that at least allowed regular bedtimes. The weight of lineage may have prevented him from straying from gonads generally, but it strikes me as a logical decision: a prostate is in most senses less hassle than a womb.\footnote{Similarly, is a vagina more difficult than a penis? No-one has been willing to tell me the maintenance costs.\footnotemark}\footnotetext{That's a lie, I haven't been willing to ask.}
+
+Our Valentine's evening together is his passion project; general urology is much-needed in Japan but vasectomies, like the contraceptive pill, are unpopular. Later, when I'm on my back staring up at the fluorescents, the doctor tells me that this operation is generally seen as a disgraceful act rather than a sensible one, something only a feckless playboy seeking to prevent extra-marital complications would undergo
+\footnote{The wide-spread sense of shame associated with vasectomies was apparent in two practical ways:
+(1) as a married man, the doctor required a consent form from my wife. I failed to bring one but he waved it off. (2) Though we had discussed it, or at least agreed upon no more children, my wife, after all Japanese, briefly succumbed. I spent most of the day perplexed as to why she would not speak or make eye contact with me. The malaise later wore off.}. This is a surprise to me, as I've generally associated vasectomies with a {\sl decline} in sexual vitality; a step upon the path of middle-aged prudence, an admission that everyone involved is too tired to generate enough passion for a condom.
+
+Have I done some research on the operation? Watched some YouTube videos on how it's done? I tell him yes, but actually I haven't. I've seen a couple diagrams. I don't care for the specifics of my vas. I {\sl have} researched whether my ejaculate will afterwards be any thinner or weaker or more translucent because after all the falsification of virility is important to me. (You know as well as I do that impregnation fantasies are valid and, may I say, preferred for some.) But I already know that both force and volume will be mostly unchanged, so I don't ask him about it. Do I have any more questions? No no.
+
+He vaguely beckons and disappears into the adjoining room. I stand and unbuckle and completely unloop my belt. He re-appears and tells me, without much passion, that that's not necessary. He turns and goes away again. I follow him. About half the space in the surgery is taken up by machines under cloth that are never revealed. There is more stuff. The operating bench is in the centre of the room. Hovering above its middle is an enormous glass magnifier on a swing arm, like an enthusiast WWII-tank modelist might have. It's clean. I pull half my pants all the way down and he tells me again, no, it's not necessary, please just lie down. I do and he helps me to pull all my pants half-way down.
+
+`It's okay, that's okay,' he says with some impatience. I knock off the head-rest with my big head and apologise. He picks it up for me. He also picks up my belt and doesn't know where to put it because nobody has ever removed it completely before.
+
+Dr. Ueno calmly tapes my penis to my stomach and applies a cool anaesthetic to my scrotum. It's a pleasant humility. The shrunken disgrace between my legs is impressing no-one, but especially not him. Now my mid-section is encased in the skeleton of an incredible sticky-tape framework keeping everything away from my testicles. It tugs variously at my skin. With this contraption intact I now have to leave and come back half an hour later, once the anaesthetic has taken effect. I waddle out and the door clangs closed and I catch the lift down onto the streets of Ebisu.
+
+It's about half-past-five in the evening. There are an unusual number of foreigners hanging around the station. Bakeries and chocolatiers are a maze of young females. Valentine's Day in Japan is reversed---it's typically observed by women buying things for men. (The National Confectionery Industry Association in 1978 created White Day to allow men to profitably return the favour exactly a month later.) There's a lot of passion in the air. It's rare to see so many happy couples and threesomes. I come from the northern rim of the Tokyo metropolis, north near Saitama but on the better side of the river. Nobody walks quite so gaily out there. All of the men and women here make me feel free but my testicles are twice-encased.
+
+I think about going to a cafe and stare through the door of one for a while but the people seem disgusted by me. I instead find a vending machine and an uncommon bench. I can see the police box where the policeman helped me find my way to the clinic, but I can't remember what he looked like and maybe he's gone off-duty. It's pretty cold too. I have this slim burning can of hot chocolate in my hand.
+
+I don't know what I'm thinking. It's a confusing mix of hormone and unfeeling. The juxtaposition does not have a meaning.
+
+I want to put my empty can into the bin next to the precise vending machine from which I bought my drink but when I turn around I can't see the machine. It seems lost even after taking a few steps west. There are others. I turn around and there it is. I'm in a hurry now. Unaided I walk back to the clinic on the other side of the station. It's in an alley skewing behind the McDonalds, a red-brick apartment block, an elevator back to the fifth floor.
+
+`What kind of music do you like?' Doctor Ueno asks. My pants are around my knees again. `Pop? Jazz? Classic?' He's holding a stack of CD cases against his chest and I realise I'm being asked to decide the soundtrack to the operation. `Have you heard this one before?' he asks, bending to show me the top of his stack. A pretty ghoulish Tony Bennett is holding Lady Gaga's hand beneath the title, {\it CHEEK TO CHEEK}. I whole-heartedly approve and either the acoustics in this surgery are amazing or I'm really in the mood. I mean, I suddenly feel excellent about this. I'm so impressed by this music that I later express my wish that all future surgeries I undergo be accompanied. He laughs at that. Are all relationships between men and their urologists this special? Am I in an Osaka jazz club?
+
+More anaesthetic is applied with a so-called jet injector. Based on his tissue demonstration, it appears to blast a mist of anaesthetic through the skin purely by force alone. I don't know, magic. The first one is a startling pinch but the rest are absolutely fine. Around two dozen or more jet blasts are applied, he tells me he's going to make the hole now, and I might as well be getting a haircut.
+
+\begin{center}
+{\it And so what? / I'm lovely /
+But, oh! / What you do to me /
+I'm like an ocean wave that's bumped / on the shore /
+I feel so absolutely stumped  / on the floor}
+\end{center}
+
+`Let me put it this way,' I had told a friend who asked. `It's not regret per se. Suppose I were granted five lifetimes. In this one I've chosen to get married and have children and I can't say I regret that. Look at how delightful they all are. 
+
+`But after living one lifetime like this I'd live the other four by myself.'
+
+I am not a natural father. How deeply and repeatedly I have hurt my wife. Each time my vacillations from a decisive yes to a decisive no on the issue of children caused grief and I was not understanding. What to me were threads were for her seams. We negotiated our way to two children and the impressive part of that is that we both ended up pleased with our lot after all the rocks and games. Luck remains with us so far.
+
+\begin{center}
+{\it Those come what may places /
+Where one relaxes on the axis of / the wheel of life /
+To get the feel of life / from jazz and cocktails}
+\end{center}
+
+He shows me the pieces of vas deferens that he's cut out. They look like two pieces of bucatini. Quite minor. When I ask him if anyone ever asks to take them home he laughs. `I don't let them. I tell them no.' Together we untape my penis from my stomach, perhaps the most painful part of the operation.
+
+He helps me with my belt, prodding at it exactly as a tailor wouldn't. Back in his office I crush myself into the chair at the end of the desk to receive my post-operative instructions. The sack is packed. There are several layers of bandages which will fall off. A medical licence from the University of London sits on the shelf on which my elbow is forced to rest, address Lover's Walk. Was he really born in 1957, because he looks more like early forties. He squints at the screen. `You see, I am old,' he laughs as he tries to read what he has written. He gives me an eight thousand yen discount, `for the English practice'. I tell him that his hair is incredible. So thick. I can't believe it. It really is great hair. I make one more appointment. I drop the first test tube he hands me and it rolls under something that I can't see. He gives me another. I realise I'll be carrying a test tube of semen on the subway when I next visit. The appointment is for March 14th, White Day---I will bring him something. I hope he likes the inert smile I give him as I leave.
+
+\end{document}
